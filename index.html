@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="ja">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>WebRTC HandsOn</title>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://skyway.io/dist/0.3/peer.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<div class="videosContainer">
+    <video id="myStream" autoplay src= "./test.mp4" width = "500" controls></video>
+</div>
+<div>
+      <p>MyID: <span id="my-id">-</span></p>
+      <p>PeerID: <span id="peer-id">-</span></p>
+  </div>
+  <hr>
+  <div>
+      <input type="text" placeholder="コメント" id="message">
+      <button id="send">Send</button>
+  </div>
+  <div id="messages"></div>
+</body>
+</html>
